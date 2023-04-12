@@ -1,0 +1,31 @@
+tap_install:
+    sensitive_values:
+        buildservice:
+            tanzunet_username: ENC[AES256_GCM,data:XJiRFpOrxWbBeWOJsekSe/jO,iv:6KzG/yXZ+j3M8AF6NDE3a4ocAC4FeUvNCaZv3YF9MpQ=,tag:EnHtg/F3KwJPfBAH0YyBhQ==,type:str]
+            tanzunet_password: ENC[AES256_GCM,data:to0GT5soIqfjKg==,iv:7ffAWuZTT2kSt5jMhl/eMHVVpPn1zysP8ldm+r035mY=,tag:oXEpHM59iO5S0pcCaAIhtA==,type:str]
+        tap_gui:
+            app_config:
+                integrations:
+                    github:
+                        - host: ENC[AES256_GCM,data:5CkMZuuLZ7N+DQ==,iv:dEksAAx7bV38H/ysAuoLDmsr7QiSWz4NtkkHwRcuFog=,tag:c8ZCTNiEYDaJ2ea9k4vHyQ==,type:str]
+                          token: ENC[AES256_GCM,data:Xq8ElykkqAw552of/r4PPuMDhTql5zqmqcJbPRUv3D115nZm7cMNsA==,iv:jlbkK86JRpX6iurbZ9oxOIPg58hshRBiuK/vdFYw4FY=,tag:VNct5Me4E/T5EkM2egVGPg==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1dhg5g6q5vlrfk98k04d066qnc9cwe77ekt4nphkjtrv8uyfmhdgqj0m8y5
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBZZUdHZ25RWVJOeUNYOG9N
+            MWVLdU13UlkxTC96SEZCVHQ1cFg2amNCb0hRClpXRk5oamJidzFZNm1YSUMwNmhI
+            NFdySVdRWURuQkRUYnk4WGZ1eUVUN0EKLS0tIFJaZ0JaUUZJTzFCeXNpdG9PRGo3
+            Q0NvZ3dTRFcwTHhHekR5Smh5N1R3REUKWWQaz8JZ2IvrXXxGN9xyI8IXGe1xIWhL
+            gCQrGSFaKhIkSi4LKC5mvqGaps2KBdbxfI/BrfABec8yHUqbqo7XyA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-04-12T20:21:56Z"
+    mac: ENC[AES256_GCM,data:7H97OADeLADW2B4xAqM0Fuiexx95KXj+ecioeNFFoa4E/D4TRmOMIon1aJSsTMS7noEpQx+YEUw/MVXprKpJ+zqb7Bv//+ST49DuYPpz9LSqx4k8DSOrDt4uAic5yunfBgzxvSNEhKepsyNcnEJSt+vBPmqk2DHM+JuVSmiGNGQ=,iv:8V2TBKN09jqmK+gP2wFISeboJ8tMNQyYtoU9WdeNhTE=,tag:vKQCb0XdLwkzAUtnPwh8Dw==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.3
