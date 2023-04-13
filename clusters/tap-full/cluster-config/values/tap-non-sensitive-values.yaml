@@ -89,11 +89,11 @@ tap_install:
       app_config:
         app:
           baseUrl: https://tap-gui.k8s.binbytes.io
-        integrations:
-        catalog:
-          locations:
-            - type: url
-              target: https://github.com/logankimmel/tap/blob/main/catalog-info.yaml
+            #        integrations:
+            #        catalog:
+            #          locations:
+            #            - type: url
+            #              target: https://github.com/logankimmel/tap/blob/main/catalog-info.yaml
         backend:
             baseUrl: https://tap-gui.k8s.binbytes.io
             cors:
