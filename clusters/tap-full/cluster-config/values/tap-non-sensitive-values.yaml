@@ -8,7 +8,6 @@ tap_install:
       - backend.appliveview.tanzu.vmware.com
       - connector.appliveview.tanzu.vmware.com
       - conventions.appliveview.tanzu.vmware.com
-      - cert-manager.tanzu.vmware.com
       - learningcenter.tanzu.vmware.com
       - workshops.learningcenter.tanzu.vmware.com
       - policy.apps.tanzu.vmware.com
