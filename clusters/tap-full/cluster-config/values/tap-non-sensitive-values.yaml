@@ -63,10 +63,10 @@ tap_install:
     
     ootb_supply_chain_testing_scanning:
       registry:
-        #    repository: lkimmel-1069/tap
-        #    server: us-west1-docker.pkg.dev
-        repository: tap
-        server: 938504343993.dkr.ecr.us-west-2.amazonaws.com
+        repository: lkimmel-1069/tap
+        server: us-west1-docker.pkg.dev
+        # repository: tap
+        # server: 938504343993.dkr.ecr.us-west-2.amazonaws.com
       gitops:
         server_address: https://github.com
         repository_owner: logankimmel
