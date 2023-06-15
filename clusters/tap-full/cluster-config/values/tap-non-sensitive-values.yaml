@@ -6,6 +6,7 @@ tap_install:
     excluded_packages:
       - appliveview.tanzu.vmware.com
       - backend.appliveview.tanzu.vmware.com
+      - buildservice.tanzu.vmware.com # excluding to use the dependency updator
       - connector.appliveview.tanzu.vmware.com
       - conventions.appliveview.tanzu.vmware.com
       - learningcenter.tanzu.vmware.com
@@ -28,11 +29,11 @@ tap_install:
         watched_namespaces: accelerator
         service_type: ClusterIP
     
-    buildservice:
-      kp_default_repository: "938504343993.dkr.ecr.us-west-2.amazonaws.com/tbs"
-      kp_default_repository_aws_iam_role_arn: "arn:aws:iam::938504343993:role/nodes.tkg.cloud.vmware.com"
-      descriptor_name: "full"
-      enable_automatic_dependency_updates: true
+    # buildservice:
+    #   kp_default_repository: "938504343993.dkr.ecr.us-west-2.amazonaws.com/tbs"
+    #   kp_default_repository_aws_iam_role_arn: "arn:aws:iam::938504343993:role/nodes.tkg.cloud.vmware.com"
+    #   descriptor_name: "full"
+    #   enable_automatic_dependency_updates: true
     
     cnrs:
       ingress:
