@@ -4,11 +4,11 @@ tap_install:
     profile: full
     ceip_policy_disclosed: true
     excluded_packages:
-      - appliveview.tanzu.vmware.com
-      - backend.appliveview.tanzu.vmware.com
+      # - appliveview.tanzu.vmware.com
+      # - backend.appliveview.tanzu.vmware.com
       - buildservice.tanzu.vmware.com # excluding to use the dependency updator
-      - connector.appliveview.tanzu.vmware.com
-      - conventions.appliveview.tanzu.vmware.com
+      # - connector.appliveview.tanzu.vmware.com
+      # - conventions.appliveview.tanzu.vmware.com
       - learningcenter.tanzu.vmware.com
       - workshops.learningcenter.tanzu.vmware.com
       - policy.apps.tanzu.vmware.com
