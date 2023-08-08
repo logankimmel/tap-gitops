@@ -81,6 +81,11 @@ tap_install:
         ssh_secret: "git-https"
     
     tap_gui:
+      auth:
+        loginPage:
+          github:
+            title: Github Login
+            message: Enter with your GitHub account
       ingressEnabled: true
       tls:
         namespace: tap-install
