@@ -2,6 +2,7 @@ tap_install:
     sensitive_values:
         tap_gui:
             auth:
+                allowGuestAccess: ENC[AES256_GCM,data:rSq53A==,iv:XKWZ699bcX9DzWF6/Ujswn2LewA7aoXmgI1BVXATeM4=,tag:yWLtEIc16K3NbD3pg+GMCg==,type:bool]
                 providers:
                     github:
                         development:
@@ -45,8 +46,8 @@ sops:
             Q0NvZ3dTRFcwTHhHekR5Smh5N1R3REUKWWQaz8JZ2IvrXXxGN9xyI8IXGe1xIWhL
             gCQrGSFaKhIkSi4LKC5mvqGaps2KBdbxfI/BrfABec8yHUqbqo7XyA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-08-08T18:52:14Z"
-    mac: ENC[AES256_GCM,data:QIOFZvgEJcmQvw2Mzft5h6opY4ugojHKBHohhqYinMC7TCcbGIsGjYiHasaVWxsouf0hoWmD0ABphCR6kXHd7T2PBdLIj90EbymkgXvTgvE5IbMg6apTtsSLo3p9avdZzzyeUtj1h1KE4HSGWfuFP7CzmL/CmmbpcUN/MS4JloE=,iv:DeW4w2Nxft+sJRCa/jf4OqQ8TwnBuwe0ueknHxBZV+U=,tag:By3nPW8KDyw4R16ymEioIg==,type:str]
+    lastmodified: "2023-08-08T18:55:15Z"
+    mac: ENC[AES256_GCM,data:usb8DjB8W43ZJK4Oqw0lHiB/N0QKOqfGsvXFruyclG8fnWvu+RgfrMh8OZQBQGrGTTzrLRCz9D1cSSyEa+YEPuuPuiDHNdPN1u/aJ8ngoWP98bOmy2W3uLWno0fTf5PfrC14YAQqYDlMK7M8gYOsgOIHo0lnzdxMXo4LQzpFlQA=,iv:PeHumLTC5cbdXC6QE3kk8udPVp/OIlVtmWC+rh/7EUw=,tag:dfagE2yPgOdQzXYfNwvVfw==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
