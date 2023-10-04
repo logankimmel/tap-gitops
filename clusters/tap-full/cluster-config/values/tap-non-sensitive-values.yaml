@@ -129,14 +129,11 @@ tap_install:
     namespace_provisioner:
       controller: false
       aws_iam_role_arn: "arn:aws:iam::938504343993:role/nodes.tkg.cloud.vmware.com"
-      additional_sources:
-      - git:
-          ref: origin/main
-          subPath: namespace-provisioner
-          url: https://github.com/logankimmel/gitops.git
-        path: _ytt_lib/testingscanning
-      - git:
-          ref: origin/main
-          url: https://github.com/logankimmel/gitops.git
-          subPath: namespace-provisioner-overrides
-        path: _ytt_lib/customize
+      gitops_install:
+        ref: origin/main
+        subPath: clusters/tap-full/cluster-config/namespace-provisioner/namespaces
+        url: https://github.com/logankimmel/tap-gitops.git
+        secretRef:
+          name: sync-git-ssh
+          namespace: tanzu-sync
+          create_export: true
