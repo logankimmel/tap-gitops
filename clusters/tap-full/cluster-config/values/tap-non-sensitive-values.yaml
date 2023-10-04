@@ -124,7 +124,7 @@ tap_install:
         url: ""
     
     grype:
-      targetImagePullSecret: gcr-tap-registry
+      targetImagePullSecret: registry-credentials
     
     namespace_provisioner:
       controller: false
