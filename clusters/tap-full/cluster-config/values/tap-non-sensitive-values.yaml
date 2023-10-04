@@ -130,7 +130,7 @@ tap_install:
       controller: false
       aws_iam_role_arn: "arn:aws:iam::938504343993:role/nodes.tkg.cloud.vmware.com"
       gitops_install:
-        ref: origin/main
+        ref: origin/master
         subPath: clusters/tap-full/cluster-config/namespace-provisioner/namespaces
         url: https://github.com/logankimmel/tap-gitops.git
         secretRef:
