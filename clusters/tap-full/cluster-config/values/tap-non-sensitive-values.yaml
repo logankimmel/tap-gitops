@@ -131,7 +131,7 @@ tap_install:
       aws_iam_role_arn: "arn:aws:iam::938504343993:role/nodes.tkg.cloud.vmware.com"
       gitops_install:
         ref: origin/master
-        subPath: clusters/tap-full/cluster-config/namespace-provisioner/namespaces
+        subPath: clusters/local-tap/cluster-config/namespace-provisioner/namespaces
         url: https://github.com/logankimmel/tap-gitops.git
         secretRef:
           name: sync-git-ssh
@@ -142,7 +142,7 @@ tap_install:
         - git:
             url: https://github.com/logankimmel/tap-gitops.git
             ref: origin/master
-            subPath: clusters/tap-full/cluster-config/namespace-provisioner/namespace-resources
+            subPath: clusters/local-tap/cluster-config/namespace-provisioner/namespace-resources
             secretRef:
               name: git-https # this is the new credential
               namespace: tap-install
