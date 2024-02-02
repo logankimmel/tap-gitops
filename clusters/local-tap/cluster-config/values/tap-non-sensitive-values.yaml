@@ -20,8 +20,7 @@ tap_install:
     contour:
       envoy:
         service:
-          type: LoadBalancer
-      infrastructure_provider: aws
+          type: NodePort
     
     shared:
       ingress_domain: k8s.lkimmel.io

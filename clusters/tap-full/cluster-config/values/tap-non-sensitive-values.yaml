@@ -17,7 +17,8 @@ tap_install:
     contour:
       envoy:
         service:
-          type: NodePort
+          type: LoadBalancer
+      infrastructure_provider: aws
     
     shared:
       ingress_domain: k8s.binbytes.io
