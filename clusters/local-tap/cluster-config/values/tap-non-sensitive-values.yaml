@@ -129,7 +129,7 @@ tap_install:
         subPath: clusters/local-tap/cluster-config/namespace-provisioner/namespaces
         url: https://github.com/logankimmel/tap-gitops.git
         secretRef:
-          name: sync-git-ssh
+          name: sync-git
           namespace: tanzu-sync
           create_export: true
       additional_sources:
