@@ -6,7 +6,7 @@ tap_install:
     excluded_packages:
       # - appliveview.tanzu.vmware.com
       # - backend.appliveview.tanzu.vmware.com
-      - buildservice.tanzu.vmware.com # excluding to use the dependency updator
+      # - buildservice.tanzu.vmware.com # excluding to use the dependency updator
       # - connector.appliveview.tanzu.vmware.com
       # # - conventions.appliveview.tanzu.vmware.com
       # - learningcenter.tanzu.vmware.com
