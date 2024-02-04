@@ -31,12 +31,6 @@ tap_install:
         watched_namespaces: accelerator
         service_type: ClusterIP
     
-    buildservice:
-      kp_default_repository: "us-west1-docker.pkg.dev/lkimmel-1069/tap"
-      kp_default_repository_secret: 
-        name: registry-credentials
-        namespace: tap-install
-    
     cnrs:
       ingress:
         external:
