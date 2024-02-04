@@ -33,6 +33,7 @@ tap_install:
     
     buildservice:
       kp_default_repository: "us-west1-docker.pkg.dev/lkimmel-1069/tap"
+      kp_default_repository_secret: registry-credentials
     
     cnrs:
       ingress:
