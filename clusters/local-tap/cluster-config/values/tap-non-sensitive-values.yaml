@@ -33,8 +33,6 @@ tap_install:
     
     buildservice:
       kp_default_repository: "us-west1-docker.pkg.dev/lkimmel-1069/tap"
-      descriptor_name: "full"
-      enable_automatic_dependency_updates: true
     
     cnrs:
       ingress:
