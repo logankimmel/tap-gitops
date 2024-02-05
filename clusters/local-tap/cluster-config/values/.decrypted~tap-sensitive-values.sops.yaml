@@ -1,0 +1,60 @@
+tap_install:
+    sensitive_values:
+        tap_gui:
+            app_config:
+                auth:
+                    loginPage:
+                        github:
+                            title: Github Login
+                            message: Enter with your GitHub account
+                    allowGuestAccess: true
+                    providers:
+                        github:
+                            development:
+                                clientId: ae38dc3c1a6d3158faea
+                                clientSecret: a4154875f02aa614561c5b9daa74846d8dbe902d
+                    integrations:
+                        github:
+                            - host: github.com
+                              token: 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
+                kubernetes:
+                    serviceLocatorMethod:
+                        type: multiTenant
+                    clusterLocatorMethods:
+                        - type: config
+                          clusters:
+                            - name: prod-run
+                              url: https://tap-run-apiserver-167217288.us-west-2.elb.amazonaws.com:6443
+                              authProvider: serviceAccount
+                              serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6IlJ4bU96ZGFzQ2I5V1FmLUl5TDN3ZHBQcl80ZE02UDFmbmZrVUZNcXd0VTgifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMjdiZTVhYWMtNDNkNy00OGI3LWFjMmMtZWY2ZmUyYThjNTczIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.SX3jMtGFYqPHQmgIPW_PfPJSjAsx9doBTe3GZwFhBJPeZF9ODyc14QSpp8AGz6K-NKg9wYFtmbM8DF_aVmv2fkQ_8HQyHaq4PEzwGSwdTr59rKK38bV4M7d-7T-lzcPnUA_fUJwHZHxAuCRMAXThN8dWcaKNRKiiZw-6GA1S73DesF42Ow5_V_0SxZEr2ecMtranAV-Bvms1iOIM3h7qgDG-xLKFaDjANltKSehFGc9p53KSCGKdWRAy7gPMTHh9JmGKzDosn1H2F9rgAozXvVsrMcjgTPHPevBdi67XjDIvJF2O3SzCdSQphGRe95mhZnwwNXE9yEzhgf-Qm2oP0w
+                              skipTLSVerify: true
+                              skipMetricsLookup: true
+                            - name: build-test
+                              url: https://kubernetes.default
+                              authProvider: serviceAccount
+                              serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6ImdTMGdhTndxQWFrLWJtWGJfX3R0dnN1Ymg2ckhFV0I0LWlKZmdEMmV4b3cifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMWU4MGNlOWUtNWIxNy00OTYyLTgzYjMtMGM1ZWY5NjBiNzMwIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.ZMPjuIIaZeQdwvjISlin-jQ7p-Ev9wo988VLi9JRmUvcHCGLngPeZ49CwP_Q2OvEXhmiAgq8FMdk9JjE1lOKJT2oLk7MHXo1sFwSme8UpaoVoVbaLA2iGeQ02T7PWpxyzod_M2Dz7qpBhOHFwtlHkMAw7UK6-0hTlPgZ-kqzdnVzEwyzShLxEMM_kj4ME9rAwhPOd4tE1ioq-IFE6nmYlaoCKTGR2ROMazlsJfYR1qNFlx1Tyk_gMExw8_3tJN2x5uLAXPctK6hvmtr0gjrSXuLbOkuIpn6aepidxwvhLTvwreGx7Oop30zt_8t9VUKc2CMSr-JUX3wdmVIqBNwqCg
+                              skipTLSVerify: true
+                              skipMetricsLookup: true
+        buildservice:
+            kp_default_repository: us-west1-docker.pkg.dev/lkimmel-1069/tap
+            kp_default_repository_username: _json_key
+            kp_default_repository_password: |
+                {
+                "type": "service_account",
+                "project_id": "lkimmel-1069",
+                "private_key_id": "3e97261808dbd9361199ecd7cbee24a747e3b6fe",
+                "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC96rWRqMemxW5p\n4Jp7deXt78fAvnttDWKbpl7y5k4mlRZHePPjFJI8r4J0eR/bNTQc15rl6VSa8eGS\noqn2Xe+QSxs2GCyxqE7MW93OgEYnNPgP9XDa3IsIz0O
+                o3Tyidpy02AjF3xHeVx+s\n+xnVcY5exFtK7s+ekYhOem4xv4/0gLCNuJY98CNhLfGgXJHktu2j1eG1LZW+TseJ\nFfHWIE9aoW2KtXow+/QqPXb3GZeOSXK9YvU0wwMXFki1EFja3WHuBx8nhKWUthRK\n7Xi18W7gu5AKMZS4WA3jAmDOurf3RQNo+SLScyxwmdt7vckyE3MPlCtWxbFVz5ki\n6
+                hJBTfWdAgMBAAECggEAS4UEG35WmfIDVHXcaEC7JFEHiRUVxokej49qTUOYiw4Y\n1GX78W4SMrCF+yPZL5Vp+hggP9F3c7/Ad8tYM6Ap7aJ4GRwm1aR8ZRYYzw9CFkAh\nblMmw9kULnYgzQrgnCf3a5BGeMyZ8eSKM4KMRMyJlRSWyubIx6DOZ4qWvBCVQV+j\n0WL23yWo+wHXU1PlnJnyORaTn
+                h4psA3Aizz/sgt1jOkaVwrXHLlm1fc1RJc29LF5\nLl2PeaHhlYfx3mcIJXKV18+Q4/5w8OD3cIF5D3MMiRaOGQKeI+14x8ZD7ovvImn/\nRKtP6InhD9LxxPMqeY/ePHE2M02cbhoFnrJF48eoLwKBgQD/d+NIxePkR/kUDqTy\nhWbmQfaFcfngVXIHQMwlPzhRQFos3rENV5bUVNWyleXcm93TR
+                rI5br+RbaQUuPYf\nhsOCVrUxTVpbH+ExVFpt2MHGaErKnxVFjIta9aEZ42O/nAgiGq/S+UAxqS8aa/Ph\nwPQnM0D2gIWTePxBrkqYD+QLQwKBgQC+T+VcdUwIZVL19/c9ImweynfPntc76bhQ\nxzq52eKFI84wF/z/TJZ3V0EPn4p2769wc2+9PXxcmgNvwtLi/eT7X1VDG6Yg/TWV\nfzegTnt
+                pG96q3swjzkLWNcq+KUWimbt53Wf1t1wnKJvPjpajFE7yOtcjAyya9Iyd\n22KwnlQ9nwKBgFFdVLVT2a5WQf1iYKShWlGRxrtfvq71Z9jpiVt/lCdEsLPDxW4z\nbGV6E4nKdihaOD9XL+Jc5ISj//NdqX4HBPPZO+JU+ac2Mxnr/NUpiSXxB4kbO8In\n7iZtPv8ozhcz0d9S0pcGLazjbo4ivc0
+                0EE7/4vvfmSuMCAO/SCDARuhTAoGBAK/x\nk32oH7P/YPRv3A6T/Vt2GdBD7H7CdBmSJzPdQTOPx7bk5oxslQseCtNTzyJoM00G\nG/7bklbWOGkht/ANhJ31JBFXxX3oOprMs3OsOyIQlwpn0lkj/tylfJvT8kICWLWw\nwMUFUNgPDgWUsKVySA5f4bfH3nwfrMTgJ1xb9EvHAoGBAKHgm6i3Ndn
+                IVghxqrOE\nn/v/UAylOZsAcmkzBBCnZr1N2Fbxx+0rBfoDPrsUXicH976v0/TvgZbeFvaVSwVX\nkFrz/Uk89Q4ejkzpc7tiK639CarOPq5NlichgUCQsVaVvZirHLPEe1nL+Biik6kC\n4HjIAik4AJ+hE9fV8RxJQ3Ek\n-----END PRIVATE KEY-----\n",
+                "client_email": "tap-registry@lkimmel-1069.iam.gserviceaccount.com",
+                "client_id": "112184310548158227162",
+                "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                "token_uri": "https://oauth2.googleapis.com/token",
+                "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tap-registry%40lkimmel-1069.iam.gserviceaccount.com"
+                }
