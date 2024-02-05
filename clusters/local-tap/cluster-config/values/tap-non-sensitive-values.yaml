@@ -24,7 +24,7 @@ tap_install:
     
     shared:
       ingress_domain: k8s.binbytes.io
-      ingress_issuer: k8s-binbytes
+      # ingress_issuer: k8s-binbytes
     
     accelerator:
       server:
@@ -38,7 +38,7 @@ tap_install:
         internal:
           namespace: tanzu-system-ingress
       domain_name: k8s.binbytes.io
-      ingress_issuer: k8s-binbytes
+      # ingress_issuer: k8s-binbytes
       lite:
         enable: true
     
@@ -83,9 +83,9 @@ tap_install:
             title: Github Login
             message: Enter with your GitHub account
       ingressEnabled: true
-      tls:
-        namespace: tap-install
-        secretName: tap-gui-crt
+      # tls:
+      #   namespace: tap-install
+      #   secretName: tap-gui-crt
       ingressDomain: k8s.binbytes.io
       service_type: ClusterIP
       app_config:
