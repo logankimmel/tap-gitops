@@ -23,7 +23,7 @@ tap_install:
           type: NodePort
     
     shared:
-      ingress_domain: k8s.lkimmel.io
+      ingress_domain: k8s.binbytes.io
       ingress_issuer: k8s-binbytes
     
     accelerator:
