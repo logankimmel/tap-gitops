@@ -100,14 +100,14 @@ tap_install:
             baseUrl: https://tap-gui.k8s.binbytes.io
             cors:
                 origin: https://tap-gui.k8s.binbytes.io
-        proxy:
-          /metadata-store:
-            target: https://metadata-store-app.metadata-store:8443/api/v1
-            changeOrigin: true
-            secure: false
-            headers:
-              X-Custom-Source: project-star
-              Authorization: "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImdTMGdhTndxQWFrLWJtWGJfX3R0dnN1Ymg2ckhFV0I0LWlKZmdEMmV4b3cifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJtZXRhZGF0YS1zdG9yZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJtZXRhZGF0YS1zdG9yZS1yZWFkLXdyaXRlLWNsaWVudCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJtZXRhZGF0YS1zdG9yZS1yZWFkLXdyaXRlLWNsaWVudCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImE1YzU1ZDcwLTdmMWMtNGNkZS04OGE1LTg4ZjhjODdhYTI5YyIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDptZXRhZGF0YS1zdG9yZTptZXRhZGF0YS1zdG9yZS1yZWFkLXdyaXRlLWNsaWVudCJ9.ErXwEeAsJG0Jbs14mbDdqfKEuEwjmW7LckQW59G0e7sKV2Cre8CcDZB4-zDywP76Lc1oPP3Xe8jS3n_cJP-E4p7oNzgeey7OtTJ8Mx7XutzsRt25bRecOi4Srk7h4o0TATEIV6d25ZjeDweXwSWvlFFAW4F4rXk8KjIAobHjZUYe2xHYd-Qv4fRYH664F6y77Uvtf6Ed5bujxhtLLs0mElUsHiFflD9X-6uPsUy4xzsSVeLyh5skwL8LAjI_BrA9yP0q-H6WRncu_1Jd_aSC4_M8kp7noa4amFvgLoJaFRewjAtXGwq34cFrsi5i4Xx7-WcxtI1ToQyadBfwQYyZEw"
+        # proxy:
+        #   /metadata-store:
+        #     target: https://metadata-store-app.metadata-store:8443/api/v1
+        #     changeOrigin: true
+        #     secure: false
+        #     headers:
+        #       X-Custom-Source: project-star
+        #       Authorization: "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImdTMGdhTndxQWFrLWJtWGJfX3R0dnN1Ymg2ckhFV0I0LWlKZmdEMmV4b3cifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJtZXRhZGF0YS1zdG9yZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJtZXRhZGF0YS1zdG9yZS1yZWFkLXdyaXRlLWNsaWVudCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJtZXRhZGF0YS1zdG9yZS1yZWFkLXdyaXRlLWNsaWVudCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImE1YzU1ZDcwLTdmMWMtNGNkZS04OGE1LTg4ZjhjODdhYTI5YyIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDptZXRhZGF0YS1zdG9yZTptZXRhZGF0YS1zdG9yZS1yZWFkLXdyaXRlLWNsaWVudCJ9.ErXwEeAsJG0Jbs14mbDdqfKEuEwjmW7LckQW59G0e7sKV2Cre8CcDZB4-zDywP76Lc1oPP3Xe8jS3n_cJP-E4p7oNzgeey7OtTJ8Mx7XutzsRt25bRecOi4Srk7h4o0TATEIV6d25ZjeDweXwSWvlFFAW4F4rXk8KjIAobHjZUYe2xHYd-Qv4fRYH664F6y77Uvtf6Ed5bujxhtLLs0mElUsHiFflD9X-6uPsUy4xzsSVeLyh5skwL8LAjI_BrA9yP0q-H6WRncu_1Jd_aSC4_M8kp7noa4amFvgLoJaFRewjAtXGwq34cFrsi5i4Xx7-WcxtI1ToQyadBfwQYyZEw"
 
     metadata_store:
       ns_for_export_app_cert: "*"
