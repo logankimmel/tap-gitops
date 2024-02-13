@@ -139,4 +139,15 @@ tap_install:
         supply_chain_service_account:
           secrets:
             - git-https
+    local_source_proxy:
+      repository: lkimmel-1069/tap
+
+      push_secret:
+        name:  registry-credentials
+        namespace: tap-install
+        create_export: true
+      pull_secret:
+        name:  registry-credentials
+        namespace: tap-install
+        create_export: true
       
