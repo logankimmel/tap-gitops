@@ -140,7 +140,7 @@ tap_install:
           secrets:
             - git-https
     local_source_proxy:
-      repository: lkimmel-1069/tap
+      repository: us-west1-docker.pkg.dev/lkimmel-1069/tap
 
       push_secret:
         name:  registry-credentials
