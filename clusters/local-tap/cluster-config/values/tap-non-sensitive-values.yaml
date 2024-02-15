@@ -145,9 +145,9 @@ tap_install:
       push_secret:
         name:  registry-credentials
         namespace: tap-install
-        create_export: true
+        create_export: false
       pull_secret:
         name:  registry-credentials
         namespace: tap-install
-        create_export: true
+        create_export: false
       
