@@ -12,4 +12,5 @@ stringData:
     metadata:
       #@overlay/match missing_ok=True
       annotations:
+        #@overlay/merge
         kapp.k14s.io/change-group: "cert-manager"
