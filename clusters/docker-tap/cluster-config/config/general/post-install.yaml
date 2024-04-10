@@ -1,0 +1,15 @@
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: post-install-app
+  namespace: tap-install
+spec:
+  fetch:
+  - git:
+      url: ssh://git@github.com/logankimmel/tap-gitops.git
+      ref: origin/master
+      secretRef: 
+        name: sync-git
+      subPath: clusters/docker-tap/cluster-config/post-install
+  template:
+  - ytt: {}
