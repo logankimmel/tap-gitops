@@ -23,8 +23,8 @@ fi
 cluster_name="$1"
 secrets_manager="$2"
 catalog_dir=".catalog"
-tanzu_sync_version="${TS_VERSION:-0.3.3}"
-tap_version="${TAP_VERSION:-1.7.0}"
+tanzu_sync_version="${TS_VERSION:-0.5.0}"
+tap_version="1.9.0"
 
 if [[ ! ",aws-secrets-manager,vault,sops," =~ (,${secrets_manager},) ]]; then
   usage
