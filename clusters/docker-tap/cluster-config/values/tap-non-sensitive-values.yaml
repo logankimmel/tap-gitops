@@ -11,9 +11,7 @@ tap_install:
     - name: contour
       secrets:
       - name: contour-overlay
-    - name: cert-manager
-      secrets:
-      - name: cert-manager-overlay
+    
     contour:
       envoy:
         service:
