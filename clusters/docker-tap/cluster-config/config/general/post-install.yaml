@@ -4,7 +4,7 @@ metadata:
   name: post-install-app
   namespace: tap-sync
   annotations:
-    kapp.k14s.io/change-rule.0: "upsert after upserting tanzu-sync-secrets"
+    kapp.k14s.io/change-rule.0: "upsert after upserting tanzu-sync"
     kapp.k14s.io/change-rule.1: "upsert after upserting tap"
 spec:
   fetch:
