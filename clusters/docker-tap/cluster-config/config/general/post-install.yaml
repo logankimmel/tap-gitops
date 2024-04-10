@@ -2,7 +2,7 @@ apiVersion: kappctrl.k14s.io/v1alpha1
 kind: App
 metadata:
   name: post-install-app
-  namespace: tap-install
+  namespace: tanzu-sync
   annotations:
     kapp.k14s.io/change-rule.0: "upsert after upserting tanzu-sync"
     kapp.k14s.io/change-rule.1: "upsert after upserting tap"
