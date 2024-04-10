@@ -16,3 +16,5 @@ spec:
       subPath: clusters/docker-tap/cluster-config/post-install
   template:
   - ytt: {}
+  deploy:
+  - kapp: {}
