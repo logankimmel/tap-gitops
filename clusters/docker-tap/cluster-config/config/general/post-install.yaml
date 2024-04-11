@@ -4,9 +4,7 @@ metadata:
   name: post-install-app
   namespace: tap-install
   annotations:
-    kapp.k14s.io/change-rule.0: "upsert after upserting tanzu-sync"
     kapp.k14s.io/change-rule.1: "upsert after upserting tap"
-    kapp.k14s.io/change-rule.2: "delete before deleting tanzu-sync"
 spec:
   serviceAccountName: sync-sa
   fetch:
@@ -14,7 +12,7 @@ spec:
       url: ssh://git@github.com/logankimmel/tap-gitops.git
       ref: origin/master
       secretRef: 
-        name: git-https
+        name: sync-git
       subPath: clusters/docker-tap/cluster-config/post-install
   template:
   - ytt: {}
