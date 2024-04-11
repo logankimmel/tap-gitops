@@ -8,6 +8,7 @@ metadata:
     kapp.k14s.io/change-rule.1: "upsert after upserting tap"
     kapp.k14s.io/change-rule.2: "delete before deleting tanzu-sync"
 spec:
+  serviceAccountName: sync-sa
   fetch:
   - git:
       url: ssh://git@github.com/logankimmel/tap-gitops.git
