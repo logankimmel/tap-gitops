@@ -1,0 +1,21 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+    name: k8s-binbytes
+    namespace: cert-manager
+spec:
+    acme:
+        email: kimmell@vmware.com
+        privateKeySecretRef:
+            name: binbytes-issuer-tls
+        server: https://acme-v02.api.letsencrypt.org/directory
+        solvers:
+            - dns01:
+                cloudDNS:
+                    project: lkimmel-1069
+                    serviceAccountSecretRef:
+                        name: clouddns-dns01-solver-svc-acct
+                        key: dns_google.json
+              selector:
+                dnsZones:
+                    - binbytes.io
