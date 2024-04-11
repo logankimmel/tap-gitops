@@ -120,7 +120,6 @@ tap_install:
         secretRef:
           name: sync-git
           namespace: tanzu-sync
-          create_export: true
       additional_sources:
         # additional sources points to the resources we want to fill those namespaces with
         - git:
