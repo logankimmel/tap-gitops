@@ -2,7 +2,7 @@ apiVersion: kappctrl.k14s.io/v1alpha1
 kind: App
 metadata:
   name: post-install-app
-  namespace: tanzu-sync
+  namespace: tap-install
   annotations:
     kapp.k14s.io/change-rule.0: "upsert after upserting tanzu-sync"
     kapp.k14s.io/change-rule.1: "upsert after upserting tap"
@@ -14,7 +14,7 @@ spec:
       url: ssh://git@github.com/logankimmel/tap-gitops.git
       ref: origin/master
       secretRef: 
-        name: sync-git
+        name: git-https
       subPath: clusters/docker-tap/cluster-config/post-install
   template:
   - ytt: {}
