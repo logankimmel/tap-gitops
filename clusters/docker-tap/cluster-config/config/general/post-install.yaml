@@ -6,7 +6,7 @@ metadata:
   annotations:
     kapp.k14s.io/change-rule.1: "upsert after upserting tap"
 spec:
-  serviceAccountName: sync-sa
+  serviceAccountName: tap-installer-sa
   fetch:
   - git:
       url: ssh://git@github.com/logankimmel/tap-gitops.git
